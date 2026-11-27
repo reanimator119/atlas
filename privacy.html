@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATLAS Studio Privacy</title>
+<style>
+/* VOICE: formal, plain legal memo.
+   IDEA: a printed policy sheet from a small studio.
+   PICTURE: none — the text is the object; one quiet seal mark.
+   COLOUR and TYPE: black on white, one deep red rule; Source Serif 4 headings, Inter body.
+   LAYOUT: single 70-character column, section links on top, two sections (#terms, #privacy). */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:wght@600&display=swap");
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121212);--ink:light-dark(#151515,#ececec);--mut:light-dark(#555,#a8a8a8);--rule:light-dark(#b3261e,#ff6b5e);--line:light-dark(#e3e3e3,#2c2c2c)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,"Segoe UI",system-ui,sans-serif;overflow-x:clip}
+html{scroll-padding-top:24px}
+main{max-width:720px;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,18px) 80px}
+header{display:flex;align-items:center;gap:16px;border-bottom:3px solid var(--rule);padding-bottom:18px;margin-bottom:22px}
+.seal{width:52px;height:52px;flex:none}
+h1{font:600 clamp(30px,5vw,42px)/1.05 "Source Serif 4",Georgia,serif;margin:0;text-wrap:balance}
+.sub{color:var(--mut);font-size:14px;margin-top:4px}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+nav a{color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 16px;text-decoration:none;font-weight:600;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+nav a:focus-visible,nav a:hover{border-color:var(--rule);outline:none}
+section{border-top:1px solid var(--line);padding-top:26px;margin-top:34px}
+h2{font:600 30px/1.1 "Source Serif 4",Georgia,serif;margin:0 0 8px}
+h3{font-size:17px;margin:24px 0 6px}
+p,li{max-width:70ch}
+ul{padding-left:22px}
+.note{color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="seal" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="26" cy="26" r="18" fill="none" stroke="currentColor" stroke-width="1"/><path d="M15 34 L26 14 L37 34 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 28 H32" stroke="currentColor" stroke-width="2"/></svg>
+    <div>
+      <h1>ATLAS Studio</h1>
+      <div class="sub">Terms of Service and Privacy Policy · Effective 27 November 2026</div>
+    </div>
+  </header>
+  <nav aria-label="Sections"><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+
+  <p>ATLAS Studio is a private desktop application that its owner uses to produce original animated videos and publish them to the owner's own social media accounts, including TikTok and YouTube. It is not offered to the public and has no other users.</p>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <h3>1. What the app does</h3>
+    <p>ATLAS Studio lets its owner sign in with their own TikTok account through TikTok Login Kit and upload videos they created to that account through the TikTok Content Posting API. Every upload starts from a deliberate action by the owner in the app.</p>
+    <h3>2. Who may use it</h3>
+    <p>Only the owner of the app may use it, and only with accounts they own. You must follow the TikTok Terms of Service, the TikTok Community Guidelines and the TikTok Developer Terms whenever you use the app.</p>
+    <h3>3. Your content</h3>
+    <p>You keep all rights to the videos, titles, captions and covers you publish. You are responsible for having the rights to everything you upload, and for labelling content correctly, including AI-generated content where TikTok requires it.</p>
+    <h3>4. Acceptable use</h3>
+    <ul>
+      <li>No spam, mass posting, or posting to accounts you do not own.</li>
+      <li>No content that breaks the law or TikTok policies.</li>
+      <li>No attempts to get around TikTok rate limits, privacy settings or review.</li>
+    </ul>
+    <h3>5. No warranty</h3>
+    <p>The app is provided as is, without warranty of any kind. The developer is not liable for lost content, failed uploads or account actions taken by TikTok.</p>
+    <h3>6. Ending use</h3>
+    <p>You can stop using the app at any time by pressing "Disconnect" in its settings and by removing ATLAS Studio from the apps connected to your TikTok account.</p>
+    <h3>7. Changes</h3>
+    <p>These terms may be updated. The date at the top of this page shows the latest version.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <h3>1. Data the app receives from TikTok</h3>
+    <ul>
+      <li>An access token and a refresh token for the connected account.</li>
+      <li>The account's open ID, display name and avatar, used only to show which account is connected.</li>
+      <li>The posting options TikTok returns for the account (for example, available privacy levels) and the status of each upload.</li>
+    </ul>
+    <h3>2. How the data is used</h3>
+    <p>The data is used only to upload the owner's videos to the owner's account and to show upload status inside the app. It is not used for advertising, profiling or analytics, and it is not sold.</p>
+    <h3>3. Where it is stored</h3>
+    <p>Tokens and settings are stored only on the owner's own computer, in a local file outside any public repository. ATLAS Studio runs no servers of its own and keeps no copy of your data anywhere else.</p>
+    <h3>4. Sharing</h3>
+    <p>Data is sent only to TikTok, through TikTok's official APIs, when an upload is made. Nothing is shared with any other party.</p>
+    <h3>5. Retention and deletion</h3>
+    <p>Pressing "Disconnect" in the app deletes the stored tokens immediately. You can also revoke access at any time in the TikTok app: Settings and privacy, then Security and permissions, then Apps and services.</p>
+    <h3>6. Children</h3>
+    <p>The app is not meant for children and does not knowingly process children's data.</p>
+    <h3>7. Contact</h3>
+    <p>Questions about these terms or this policy can be sent to the developer through the contact channel listed on the developer's TikTok profile.</p>
+    <p class="note">This page covers the ATLAS Studio application only.</p>
+  </section>
+</main>
+</body>
+</html>
